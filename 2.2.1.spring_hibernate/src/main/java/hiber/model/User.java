@@ -29,8 +29,9 @@ public class User {
    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
    private Car car;
 
-   public User() {}
-   
+   public User() {
+   }
+
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
       this.lastName = lastName;
@@ -80,12 +81,12 @@ public class User {
 
    @Override
    public String toString() {
-      return  "\n User{" +
+      return "\n User{" +
               "id=" + id +
               ", firstName='" + firstName + '\'' +
               ", lastName='" + lastName + '\'' +
-              ", email='" + email + '\''
-              + this.car +
+              ", email='" + email + '\'' +
+              ", "+ this.car +
               '}';
    }
 

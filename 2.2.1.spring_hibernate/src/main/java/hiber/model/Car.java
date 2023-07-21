@@ -36,7 +36,7 @@ public class Car {
     }
 
     public void setUser(User user) {
-       this.user = user;
+        this.user = user;
     }
 
     public int getSeries() {
@@ -58,7 +58,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", series=" + series +
                 '}';
     }
